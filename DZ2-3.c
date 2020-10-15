@@ -80,7 +80,14 @@ int main(int argc, char const *argv[])
                 else if(right == 2) right = j;
             }
         }
-        fprintf(dot, "%c -- %c;\n", nodes[left], nodes[right]);
+        if (right == 2)
+        {
+        	fprintf(dot, "%c -- %c;\n", nodes[left], nodes[left]);
+        }
+        else 
+        {
+        	fprintf(dot, "%c -- %c;\n", nodes[left], nodes[right]);
+        }
         left = 2;
         right = 2;
     }
