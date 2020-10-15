@@ -7,8 +7,8 @@ int main(int argc, char const *argv[])
 	int number_of_ribs = 0;
 	int check = 0;
 	int connectivity = 0;
-	int left = 2;
-	int right = 2;
+	int left = 25677899;
+	int right = 25677899;
 
 	printf("enter the number of nodes:\n");
 	scanf("%d", &number_of_nodes);
@@ -76,11 +76,11 @@ int main(int argc, char const *argv[])
         for (int j = 0; j < number_of_nodes; j++)
         {
             if (graph[j][i] == 1){
-                if(left == 2) left = j;
-                else if(right == 2) right = j;
+                if(left == 25677899) left = j;
+                else if(right == 25677899) right = j;
             }
         }
-        if (right == 2)
+        if (right == 25677899)
         {
         	fprintf(dot, "%c -- %c;\n", nodes[left], nodes[left]);
         }
@@ -88,8 +88,8 @@ int main(int argc, char const *argv[])
         {
         	fprintf(dot, "%c -- %c;\n", nodes[left], nodes[right]);
         }
-        left = 2;
-        right = 2;
+        left = 25677899;
+        right = 25677899;
     }
 
     fputs("}", dot);
