@@ -60,7 +60,7 @@ int main(int argc, char const *argv[])
 		if (check >= 3)
 		{
             printf("Wrong input!!!\n");
-            exit(228);
+            exit(000);
         }
         check = 0;
 	}
